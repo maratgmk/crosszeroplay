@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Play {
 
         private static char[][] board = new char[3][3];
-        private static final char PLAYER1 = 'X';
+        static final char PLAYER1 = 'X';
         private static final char PLAYER2 = 'O';
         private static final char EMPTY = '2';
 
@@ -48,7 +48,7 @@ public class Play {
             }
         }
 
-        private static void initializeBoard() {
+        static void initializeBoard() {
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
                     board[i][j] = EMPTY;
@@ -56,7 +56,7 @@ public class Play {
             }
         }
 
-        private static void printBoard() {
+        static void printBoard() {
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
                     System.out.print(board[i][j] + "*");
